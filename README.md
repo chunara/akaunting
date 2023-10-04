@@ -1,29 +1,28 @@
-# README #
+Akaunting Project modified as Client request
 
-This README would normally document whatever steps are necessary to get your application up and running.
 
-### What is this repository for? ###
+Client Request:
+1. Download and run Akaunting app locally
+2. Write a small module inside that. Create two API inside that module. Those are:
+2.1 Create user 
+2.2. Create Invoice and Bill between two user
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
-### How do I get set up? ###
+**I have created below Modules and Requests to API to make actions**
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+1. http://localhost/akaunting1/public/api/v1/userCreate  => POST Method
+   - This method create user
+   - POST BODY: 
+   - { "name":"test", "email":"test@yopmail.com", "password":123456 }
 
-### Contribution guidelines ###
 
-* Writing tests
-* Code review
-* Other guidelines
+3. http://localhost/akaunting1/public/api/v1/getUsers == GET Method
+   - This Method Return all Users
 
-### Who do I talk to? ###
+4. http://localhost/akaunting1/public/api/v1/userInvoiceCreate  => POST MEthod
+   - This Method Create Invoice for User id provided in Post
+   - POST BODY: 
+   - { "userId":1, "amount":50 }
 
-* Repo owner or admin
-* Other community or team contact
+4. http://localhost/akaunting1/public/api/v1/getUserInvoiceCreate/{UserId} => Get Method
+   - This method return Created Invoice data for provided User id
