@@ -26,3 +26,5 @@ Client Request:
 
 4. http://localhost/akaunting1/public/api/v1/getUserInvoiceCreate/{UserId} => Get Method
    - This method return Created Invoice data for provided User id
+
+5. Check akaunting.sql for database
